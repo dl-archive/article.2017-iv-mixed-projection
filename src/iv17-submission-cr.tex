@@ -1,0 +1,89 @@
+
+
+\documentclass[10pt, conference, compsocconf]{IEEEtran}
+
+\usepackage{cite}
+
+\ifCLASSINFOpdf
+\else
+\fi
+
+\usepackage{graphicx}
+\usepackage{float}
+
+\graphicspath{{figures/}}
+\DeclareGraphicsExtensions{.pdf,.PDF,.png,.PNG}
+
+\usepackage{balance}
+
+\usepackage[draft]{hyperref}
+\renewcommand{\sectionautorefname}{Section}
+\renewcommand{\figureautorefname}{Fig.}
+
+\usepackage{csquotes}
+\usepackage{gensymb}
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\makeatletter
+\g@addto@macro\@maketitle{
+    \vspace{-1\baselineskip}
+    \vspace{1.6\baselineskip}
+    \begin{figure}[H]
+        \setlength{\linewidth}{\textwidth}
+        \setlength{\hsize}{\textwidth}
+        \includegraphics[width=\textwidth]{teaser}
+        \caption{%
+            2D treemap (left) and 2.5D treemap (center) depicting the same data using color and additional height mapping respectively.
+            A mixed-projection treemap (right), in contrast, reduces visual clutter and occlusion. At the same time it exposes important correlations not accounted for in the 2D treemap.%
+        }
+        \label{fig:teaser}
+        \label{fig:example-zoo}
+    \end{figure}
+}
+\makeatother
+
+\begin{document}
+\title{Mixed-Projection Treemaps: A Novel Approach Mixing 2D and 2.5D Treemaps}
+
+\author{%
+    \IEEEauthorblockN{Daniel Limberger, Willy Scheibel, Matthias Trapp, and J\"urgen D\"ollner}
+    \IEEEauthorblockA{%
+        Hasso Plattner Institute---Faculty of Digital Engineering\\
+        University of Potsdam, Germany\\
+        \{daniel.limberger, willy.scheibel, matthias.trapp, juergen.doellner\}@hpi.de}
+}
+
+\maketitle
+
+\begin{abstract}
+This paper presents a novel technique for combining 2D and 2.5D treemaps using multi-perspective views to leverage the advantages of both treemap types.
+It enables a new form of overview+detail visualization for tree-structured data and contributes new concepts for real-time rendering of and interaction with treemaps.
+The technique operates by tilting the graphical elements representing inner nodes using affine transformations and animated state transitions.
+We explain how to mix orthogonal and perspective projections within a single treemap.
+Finally, we show application examples that benefit from the reduced interaction overhead.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Information Visualization; Overview+Detail; Treemaps; 2.5D Treemaps; Multi-perspective Views;
+\end{IEEEkeywords}
+
+\IEEEpeerreviewmaketitle
+
+\input{1-introduction}
+\input{2-related}
+\input{3-visualization}
+\input{5-results}
+\input{6-conclusion}
+
+\balance
+
+\section*{Acknowledgment}
+\noindent
+This work was funded by the Federal Ministry of Education and Research (BMBF), Germany, within the InnoProfile Transfer research group \enquote{4DnD-Vis} (\href{www.4dndvis.de}{www.4dndvis.de}).
+
+\bibliographystyle{IEEEtran}
+\bibliography{IEEEabrv,references}
+
+\end{document}
+
