@@ -4,7 +4,7 @@
 
 *21st International Conference Information Visualisation (IV '17)*, July 11–14, 2017, London, United Kingdom. IEEE, pp. 164–169.
 
-[![Version of record: 10.1109/iV.2017.67](https://img.shields.io/badge/Version_of_record-10.1109%2FiV.2017.67-007ec6)](https://doi.org/10.1109/iV.2017.67) [![ResearchGate](https://img.shields.io/badge/ResearchGate-publication-00CCBB?logo=researchgate&logoColor=white)](https://www.researchgate.net/publication/316999964)
+[![Version of record: 10.1109/iV.2017.67](https://img.shields.io/badge/Version_of_record-10.1109%2FiV.2017.67-007ec6)](https://doi.org/10.1109/iV.2017.67) [![Author's version: 10.5281/zenodo.24220715](https://img.shields.io/badge/Author%27s_version-10.5281%2Fzenodo.24220715-007ec6)](https://doi.org/10.5281/zenodo.24220715) [![ResearchGate](https://img.shields.io/badge/ResearchGate-publication-00CCBB?logo=researchgate&logoColor=white)](https://www.researchgate.net/publication/316999964)
 
 > This paper presents a novel technique for combining 2D and 2.5D treemaps using multi-perspective views to leverage the advantages of both treemap types.
 > It enables a new form of overview+detail visualization for tree-structured data and contributes new concepts for real-time rendering of and interaction with treemaps.
