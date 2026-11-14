@@ -16,7 +16,7 @@ The prototypical implementation is an extension to a 2.5D treemap visualization 
 \subsection*{Application Examples}
 
 \noindent
-Mixed-projection treemaps support in getting an overview over a dataset first and finding relevant nodes afterwards by enabling the third dimension on-demand.
+Mixed-projection treemaps support in getting an overview of a dataset first and finding relevant nodes afterwards by enabling the third dimension on-demand.
 As examples of real-world tree-structured datasets we chose a population count dataset and a software system dataset.
 
 \paragraph{Population Count Dataset}
@@ -39,7 +39,7 @@ There are different approaches for setting the tilt anchor, angle, and additiona
 To support users in maintaining their mental map, animated transition and different types of perspectives can be applied.
 
 \paragraph{Perspective vs. Orthographic Projection}
-Due to perspective foreshortening in a perspective view (the default for virtual 3D environments), objects that are far form the virtual camera away are rendered smaller than closer ones. Alternatively, in an orthographic view, all objects appear at same scale. Since the user preference of projection may differ, both options are supported: (1) perspective projections provide additional information about depth and are often easier to interpret, and (2) orthographic projections facilitate comparison of nodes w.r.t. height and area.
+Due to perspective foreshortening in a perspective view (the default for virtual 3D environments), objects that are far away from the virtual camera are rendered smaller than closer ones. Alternatively, in an orthographic view, all objects appear at the same scale. Since the user preference for a projection may differ, both options are supported: (1) perspective projections provide additional information about depth and are often easier to interpret, and (2) orthographic projections facilitate comparison of nodes w.r.t. height and area.
 Further, an orthographic projection renders no occlusion to neighboring nodes in the overview.
 
 \paragraph{Tilt Anchor}
@@ -56,17 +56,17 @@ To exploit this space further, the tilted node can be shifted within the origina
 During experiments we made the following observation: the lower alignment seems to be most beneficial as the risk of occluding nearby nodes is minimized (compare to the right pictogram with top alignment; overdraw is colored black) and there is still sufficient space for possible additional information display (as opposed to the center alignment with justified whitespace, compare center pictogram).
 
 \paragraph{Tilt Angle}
-The effective tilt angle is subject to inner-node complexity and height-value distribution. Although angles between 0\degree{} and 90\degree{} are possible, a tilt degree of $\alpha= 0\degree$ results in no additional height information and a tilt of $\alpha = 90\degree$yields high occlusion (\autoref{fig:tilt-angle}).
+The effective tilt angle is subject to inner-node complexity and height-value distribution. Although angles between 0\degree{} and 90\degree{} are possible, a tilt degree of $\alpha= 0\degree$ results in no additional height information and a tilt of $\alpha = 90\degree$ yields high occlusion (\autoref{fig:tilt-angle}).
 \begin{figure}[h!]
     \includegraphics[width=\linewidth]{results-30-45-60}
     \caption{Orthogonal (top row) and perspective (bottom row) projections at different tilt angles, all anchored at the bottom (overdraw colored black).}
     \label{fig:tilt-angle}
 \end{figure}
-We found tilt angles between $30\degree$ and $60\degree$ to be reasonable supportive.
-We also found that a slightly different shading of the cuboids' lateral surfaces servers as additional tilt cue.
+We found tilt angles between $30\degree$ and $60\degree$ to be reasonably supportive.
+We also found that a slightly different shading of the cuboids' lateral surfaces serves as additional tilt cue.
 
 \paragraph{Tilt Transitions}
-Even though the mixed-projection treemap is designed for static display, the use of manual or animated transitions can help a user to maintain its mental map during the state change from overview to detailed depiction of an inner node and is highly suggested.
+Even though the mixed-projection treemap is designed for static display, the use of manual or animated transitions can help a user to maintain their mental map during the state change from overview to detailed depiction of an inner node and is highly suggested.
 
 \begin{figure}[b!]
     \includegraphics[width=\linewidth]{results-poco}

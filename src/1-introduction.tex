@@ -4,27 +4,27 @@
 \noindent
 Treemaps represent a space-filling visualization technique that facilitates display and exploration of non-spatial, attributed, tree-structured data.
 They map attributes to graphical elements, e.g., rectangles, that are recursively stacked within their parents' elements.
-As one key advantage 2D treemaps serve as scalable visualization technique for tree-structured data~\cite{Fekete2002}.
-They are applied in various research and industry applications to provide comprehensive and consistent means for communication and visual analytics~\cite{MacEachren1995} of non-spatial, massive, temporal and structural evolving information such as file systems~\cite{Shneiderman1992} and software systems~\cite{Limberger2013}.
-2.5D treemaps extend this concept by introducing height as additional visual variable.
+As one key advantage, 2D treemaps serve as a scalable visualization technique for tree-structured data~\cite{Fekete2002}.
+They are applied in various research and industry applications to provide comprehensive and consistent means for communication and visual analytics~\cite{MacEachren1995} of non-spatial, massive, temporally and structurally evolving information such as file systems~\cite{Shneiderman1992} and software systems~\cite{Limberger2013}.
+2.5D treemaps extend this concept by introducing height as another visual variable.
 The 3D representation, however, leads to increased rendering effort, occlusion, and demands for advanced navigation techniques that counterbalance the advantages of 2.5D treemaps to a certain degree.
 
 The expressiveness of 2D treemaps is limited compared to 2.5D treemaps taking advantage of the third dimension~\cite{Schulz2011}.
-Apart from the height per graphical element they also provide additional visual variables such as transparency, texture, shading, extended shape, as well as silhouette enhancement techniques~\cite{Limberger2016}.
+Apart from the height per graphical element, they also provide additional visual variables such as transparency, texture, shading, extended shape, as well as silhouette enhancement techniques~\cite{Limberger2016}.
 Similar to 2D treemaps, 2.5D treemaps can be efficiently rendered~\cite{Trapp2013} and offer an additional dimension for information display.
 
-2.5D treemaps are limited by a number of drawbacks~\cite{VanWijk2003,Schulz2011}; such as occlusion, underutilized screen-space, and perspective-foreshortening--problems well known in the field of thematic 3D visualization~\cite{Elmqvist2008,Lorenz2008}.
+2.5D treemaps are limited by a number of drawbacks~\cite{VanWijk2003,Schulz2011}, such as occlusion, underutilized screen-space, and perspective foreshortening---problems well known in the field of thematic 3D visualization~\cite{Elmqvist2008,Lorenz2008}.
 Especially occlusion appears to have a \enquote{detrimental impact on discovering, accessing, and spatially relating embedded data}~\cite{Roehlig2016}.
 In most applications though, occlusion is usually counterbalanced by a well-tuned \emph{map theme} (a task-centric specification of the attribute mapping to visual variables) and usually does not lead to a \enquote{significant loss of information}:
 similar to the use of color, a meaningful use of height facilitates identification of relevant data by means of outlier perception, data range and distribution adjustments, as well as aggregation of irrelevant areas~\cite{Limberger2017}.
-When applying these established operations the resulting 2.5D treemaps consist mostly of flat cuboids.
+When applying these established operations, the resulting 2.5D treemaps consist mostly of flat cuboids.
 However, when the input data is partially unknown or the task focuses on dynamic exploration, tuning the overall map theme might not be beneficial or appropriate at all and the visual complexity, e.g., by means of occlusion, can be hindering in the information gathering process.
 
 This paper presents a novel visualization approach for treemaps that combines orthogonal and perspective projections within a single 2.5D treemap.
-Thereby it strengthens the applicability of treemaps by optimizing their compliance to the visual information seeking mantra \enquote{overview first, zoom and filter, then details-on-demand}~\cite{Shneiderman1996}.
+Thereby, it strengthens the applicability of treemaps by optimizing their compliance with the visual information seeking mantra \enquote{overview first, zoom and filter, then details-on-demand}~\cite{Shneiderman1996}.
 For it, rendering and interaction techniques that enable 2D treemaps to get locally extended to 2.5D treemaps (\emph{mixed-projection treemaps}, \autoref{fig:teaser}) are introduced and the following contributions are made:
 \begin{enumerate}
-    \item A rendering technique that dynamically mixes different projections supporting seamless integration of 2.5D treemaps for region-of-interests into 2D treemaps to facilitate communication of additional information using more visual variables.
+    \item A rendering technique that dynamically mixes different projections supporting seamless integration of 2.5D treemaps for regions of interest into 2D treemaps to facilitate communication of additional information using more visual variables.
     \item An interaction concept that enables users to control the projection by means of manual and automated tilting, either providing explicit control or using animated state transitions, respectively.
 \end{enumerate}
 We argue that interactive mixed-projection treemaps reduce the need for complex navigation metaphors typically associated with 2.5D treemaps and, further, feature traits common for \emph{focus+context} or \emph{overview+detail} metaphors, i.e., (1) the reduction of visual complexity for overview and context display and (2) the visualization of additional data in focus or detail areas. We demonstrate and discuss these aspects by means of application examples. %

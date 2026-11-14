@@ -13,29 +13,29 @@ Often used visual variables include size and color~\cite{Fekete2002} as well as 
 Besides treemap presentations, a basic layout algorithm has to be chosen according to the particular use cases.
 For example, the choice of the layout algorithm influences the creation and preservation of a mental map for the user of the visualization~\cite{Misue1995}.
 One major disadvantage of the Slice'n Dice algorithm is the creation of unfavorable aspect ratios of the node representations. Bruls et~al. as well as Bederson and Shneiderman counterbalance this problem using Squarified~\cite{Bruls1999} and Strip Treemap~\cite{Bederson2002} layouts.
-Latest research focus on the use of space-filling curves and further optimizes the trade-off between readability and stability~\cite{Tu2007,Tak2013}.
+Latest research focuses on the use of space-filling curves and further optimizes the trade-off between readability and stability~\cite{Tu2007,Tak2013}.
 Since most of the treemap layout algorithms are designed for 2D presentation, they do not take possible occlusion within 2.5D treemaps into account.
 
 \paragraph{2.5D Treemaps}
 
-The first extension of 2D treemap algorithms to the third dimension are presented in the StepTree visualization system by Bladh et~al.~\cite{Bladh2004}. It extends the initial approach by stacking the graphical representations of subdirectories.
-In a comparative study between the StepTree and its corresponding 2D treemap users significantly performed better in tasks of interpreting the hierarchical structure while preserving performance in other interpretive and navigational tasks.
-In addition to this approach there exist a variety of modifications and extensions, e.g., 3D Polar Treemaps, Treecubes, or Collector's Box Treemaps~\cite{Schulz2011}.
-In contrast to general 3D treemaps, most of current 3D tree visualization techniques combine a 2D layout and extrude the graphical elements forming the third dimension.
+The first extension of 2D treemap algorithms to the third dimension is presented in the StepTree visualization system by Bladh et~al.~\cite{Bladh2004}. It extends the initial approach by stacking the graphical representations of subdirectories.
+In a comparative study between the StepTree and its corresponding 2D treemap, users performed significantly better in tasks of interpreting the hierarchical structure while preserving performance in other interpretive and navigational tasks.
+In addition to this approach, there exist a variety of modifications and extensions, e.g., 3D Polar Treemaps, Treecubes, or Collector's Box Treemaps~\cite{Schulz2011}.
+In contrast to general 3D treemaps, most current 3D tree visualization techniques combine a 2D layout and extrude the graphical elements forming the third dimension.
 Due to the restricted use of the third dimension, we refer to the term 2.5D treemaps.
-An example on how to adaptively extend the nodes' shape in 2D treemaps by the third dimension was provided by Chaudhuri and Shen~\cite{Chaudhuri2009}.
+An example of how to adaptively extend the nodes' shape in 2D treemaps by the third dimension was provided by Chaudhuri and Shen~\cite{Chaudhuri2009}.
 Wettel and Lanza use 2.5D treemaps to create a metaphorical view on software system artifact hierarchies with CodeCities~\cite{Wettel2007} by mapping additional information to the height of leaf nodes.
-Bohnet and D{\"o}llner mentioned the benefits of using realistic rendering effects (e.g., shadows) in 2.5D treemaps to support the users' in distinguishing individual elements~\cite{Bohnet2011}.
+Bohnet and D{\"o}llner mentioned the benefits of using realistic rendering effects (e.g., shadows) in 2.5D treemaps to support users in distinguishing individual elements~\cite{Bohnet2011}.
 
-The increasing number of items in large hierarchies leads to perceptional questions about treemap visualizations, e.g., how much effect does the width of a nodes' border have on the ability to extract the hierarchical structure of the underlying data~\cite{Kong2010}.
-With an increasing number of items, the need for focus+content as well as overview+detail techniques emerges~\cite{Hauser2006}.
-Even though the visualization of a wide range of large hierarchical datasets (e.g., software systems, economy data) is frequently studied, the interaction techniques used in this field remains straightforward.
-Apparent interaction techniques in 2.5D treemaps are the selection of inner nodes and leafs as well as the coloring/highlighting of nodes~\cite{Wettel2007}.
+The increasing number of items in large hierarchies leads to perceptional questions about treemap visualizations, e.g., how much effect does the width of a node's border have on the ability to extract the hierarchical structure of the underlying data~\cite{Kong2010}.
+With an increasing number of items, the need for focus+context as well as overview+detail techniques emerges~\cite{Hauser2006}.
+Even though the visualization of a wide range of large hierarchical datasets (e.g., software systems, economy data) is frequently studied, the interaction techniques used in this field remain straightforward.
+Apparent interaction techniques in 2.5D treemaps are the selection of inner nodes and leaves as well as the coloring/highlighting of nodes~\cite{Wettel2007}.
 Sud et~al. present interactive rendering, navigation, and animation of dynamically changing 2D Voronoi Treemaps by using a GPGPU-based rendering technique~\cite{Sud2010}.
 
 \paragraph{Mixed-perspective Visualization}
 
 The choice for the type of projection for virtual 3D environments is often either an orthographic or perspective projection~\cite{Piringer2004}.
 However, depending on the composition and the characteristics of the environment, mixed projections can provide effective communication of the content.
-For virtual terrain and city model visualization, multi-perspective views with bended projections provides a near-field depiction of high detail and a context area of less detail~\cite{Pasewaldt2011,Roehlig2016}.
-Prior to hardware-accelerated rendering techniques for mixed projections were developed~\cite{Lorenz2008}, these approaches were already applied by artists such as H.~C.~Berann~\cite{Berann1999}.
+For virtual terrain and city model visualization, multi-perspective views with bent projections provide a near-field depiction of high detail and a context area of less detail~\cite{Pasewaldt2011,Roehlig2016}.
+Before hardware-accelerated rendering techniques for mixed projections were developed~\cite{Lorenz2008}, these approaches were already applied by artists such as H.~C.~Berann~\cite{Berann1999}.

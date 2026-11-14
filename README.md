@@ -42,6 +42,16 @@ The slides contain third-party images; the iceberg (`slides/images/iceberg.jpg`,
 ## Versions
 
 - [`v1.0-camera-ready`](https://github.com/dl-archive/article.2017-iv-mixed-projection/tree/v1.0-camera-ready) – sources as submitted to IEEE, and the talk
+- [`v1.1-revised`](https://github.com/dl-archive/article.2017-iv-mixed-projection/tree/v1.1-revised) – author's revised version (2026-11-14): spelling, grammar and hyphenation fixes, see [Revisions](#revisions)
+
+## Revisions
+
+`v1.1-revised` (2026-11-14) corrects errors in the camera-ready version without changing its content or layout (same page and column breaks).
+Every page carries the note "Author's revised version (2026-11-14). Version of record: https://doi.org/10.1109/iV.2017.67".
+
+- Spelling: "focus+context" (was "focus+content"), "tilted" (was "titled"), "leaves", "bent", "vertical extent", "far away from", "serves as", "reasonably supportive".
+- Grammar and word choice: "a scalable visualization technique", "temporally and structurally evolving", "another visual variable", "compliance with", "regions of interest", "research focuses on", "is presented", "users performed significantly better", "most current 3D tree visualization", "An example of how to", "to support users in", "a node's border", "remain straightforward", "provide a near-field", "Before hardware-accelerated rendering", "using a preferred relative location", "the virtual camera's eye position", "the node's size", "Even though both", "2.5D treemaps", "an animated transition", "combined by applying", "an overview of", "at the same scale", "preference for a projection", "their mental map", and missing commas.
+- Hyphenation and typography: two-part, node-local, screen-space, inner node, landscape metaphor, perspective foreshortening, em dash, "90° yields".
 
 ## Citation
 

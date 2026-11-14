@@ -34,8 +34,8 @@
         \setlength{\hsize}{\textwidth}
         \includegraphics[width=\textwidth]{teaser}
         \caption{%
-            2D treemap (left) and 2.5D treemap (center) depicting the same data using color and additional height mapping respectively.
-            A mixed-projection treemap (right), in contrast, reduces visual clutter and occlusion. At the same time it exposes important correlations not accounted for in the 2D treemap.%
+            2D treemap (left) and 2.5D treemap (center) depicting the same data using color and additional height mapping, respectively.
+            A mixed-projection treemap (right), in contrast, reduces visual clutter and occlusion. At the same time, it exposes important correlations not accounted for in the 2D treemap.%
         }
         \label{fig:teaser}
         \label{fig:example-zoo}
@@ -43,6 +43,9 @@
 }
 \makeatother
 
+\usepackage{xcolor}
+\usepackage{eso-pic}
+\AddToShipoutPictureFG{\AtPageLowerLeft{\put(\LenToUnit{0.5\paperwidth},\LenToUnit{6mm}){\makebox[0pt][c]{\fontsize{6.5}{8}\selectfont\color{gray}Author's revised version (2026-11-14). Version of record: \url{https://doi.org/10.1109/iV.2017.67}}}}}
 \begin{document}
 \title{Mixed-Projection Treemaps: A Novel Approach Mixing 2D and 2.5D Treemaps}
 
